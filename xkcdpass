@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import os
+import subprocess
+
+xkcdpass_cmd = "xkcdpass --count=%s --delimiter=%s --min=%s --max=%s --valid-chars=%s --numwords=%s"%(os.environ.get("COUNT"),os.environ.get("DELIMITER"),os.environ.get("MIN"),os.environ.get("MAX"),os.environ.get("VALID_CHARS"),os.environ.get("NUMWORDS"))
+
+print("Content-Type: text/html\n")
+print("<!doctype html><title>xkcdpass</title><h2>xkcdpass</h2>")
+
+
+subprocess = subprocess.Popen(xkcdpass_cmd, shell=True, stdout=subprocess.PIPE)
+subprocess_return = subprocess.stdout.read()
+
+print("<h3>" + subprocess_return.decode('ascii').replace('\n','<br/><br/>') + "</h3>")
