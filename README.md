@@ -1,1 +1,29 @@
 # docker-xkcdpass-web
+
+`docker run -d -p 8000:8000 toughiq/xkcdpass`
+
+http://localhost:8000
+
+# Basics
+
+This repo is based on this repo: https://github.com/toughIQ/docker-xkcdpass
+It makes use of Python HTTP Server.
+
+# Defaults
+
+This container image uses this defaults issued via the ENV docker parameter:
+```
+ENV COUNT=5 \
+    DELIMITER=- \
+    MIN=5 \
+    MAX=8 \
+    VALID_CHARS=[a-x] \
+    NUMWORDS=5
+```
+* COUNT: number of passwords generated
+* DELIMITER: words separated by -
+* MIN/MAX: min/max number of letters by word
+* VALID_CHARS: characters used in words. Y and Z are missing, since they often cause troubles with non english keyboard layouts.
+* NUMWORDS: number of words for each password generated
+
+
