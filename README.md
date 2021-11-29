@@ -6,8 +6,7 @@ http://localhost:8000
 
 # Basics
 
-This repo is based on this repo: https://github.com/toughIQ/docker-xkcdpass
-and adds the features of Python HTTP Server.
+This repo is based on https://github.com/toughIQ/docker-xkcdpass and adds the features of Python HTTP Server.
 
 # Defaults
 
