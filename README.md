@@ -1,6 +1,6 @@
 # docker-xkcdpass-web
 
-`docker run -d -p 8000:8000 toughiq/xkcdpass`
+`docker run -d -p 8000:8000 toughiq/xkcdpass-web`
 
 http://localhost:8000
 
