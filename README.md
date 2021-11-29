@@ -7,7 +7,7 @@ http://localhost:8000
 # Basics
 
 This repo is based on this repo: https://github.com/toughIQ/docker-xkcdpass
-It makes use of Python HTTP Server.
+and adds the features of Python HTTP Server.
 
 # Defaults
 
@@ -26,4 +26,4 @@ ENV COUNT=5 \
 * VALID_CHARS: characters used in words. Y and Z are missing, since they often cause troubles with non english keyboard layouts.
 * NUMWORDS: number of words for each password generated
 
-
+To change these values at startup just use the `-e` or `--env` parameter with `docker run`.
