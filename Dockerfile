@@ -9,8 +9,8 @@ ADD xkcdpass /webserver/cgi-bin/
 
 WORKDIR /webserver
 
-EXPOSE 8000
-ENTRYPOINT python3 -m http.server --cgi 8000 
+EXPOSE 8080
+ENTRYPOINT python3 -m http.server --cgi 8080 
 
 ENV COUNT=5 \
     DELIMITER=- \
