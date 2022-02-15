@@ -1,3 +1,5 @@
+# demo for OCP
+
 FROM docker.io/toughiq/xkcdpass:latest
 
 RUN mkdir -p /webserver/cgi-bin
