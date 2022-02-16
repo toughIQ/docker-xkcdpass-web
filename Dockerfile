@@ -1,4 +1,5 @@
 FROM docker.io/toughiq/xkcdpass:latest
+LABEL maintainer="toughiq@gmail.com"
 
 RUN mkdir -p /webserver/cgi-bin
 
